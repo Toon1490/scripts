@@ -1,0 +1,19 @@
+local Players = game:GetService("Players")
+local LocalPlayer = Players.LocalPlayer
+local character = LocalPlayer.Character or LocalPlayer.CharacterAdded:Wait()
+local hrp = character:WaitForChild("HumanoidRootPart")
+local safeY = 50  -- Y position to teleport player to
+local safePosition = Vector3.new(0, safeY, 0)  -- Center above baseplate
+
+	game:GetService("StarterGui"):SetCore("SendNotification", { 
+	    Title = "Anti Void";
+	    Text = "By 1nHum4n3 @JustTooni385";
+	    Icon = "rbxthumb://type=Asset&id=1030775394&w=150&h=150"})
+    Duration = 0.0001
+
+while true do
+    task.wait(0.2)
+    if hrp.Position.Y < -50 then
+        hrp.CFrame = CFrame.new(safePosition)
+    end
+end
