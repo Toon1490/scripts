@@ -17,15 +17,3 @@ while true do
         hrp.CFrame = CFrame.new(safePosition)
     end
 end
-
-coroutine.wrap(function()
-	while true do
-		while true do
-    task.wait(0.2)
-    if hrp.Position.Y < -50 then
-        hrp.CFrame = CFrame.new(safePosition)
-    end
-end
-		wait(60)
-	end
-end)()
