@@ -9,15 +9,6 @@ local player = game.Players.LocalPlayer
 local character1 = player.Character
 local mouse = player:GetMouse()
 
-local fakebody = Instance.new("Part", character1)
-fakebody.Transparency = 1
-fakebody.Anchored = true
-fakebody.CanCollide = false
-fakebody.Position = character1.Head.Position
-
-loadstring(game:HttpGet("https://raw.githubusercontent.com/GelatekWasTaken/Reanimation.lua/main/Main/Main.lua"))()
-wait(1)
-
 mouse.KeyDown:connect(function(key)
     if key == "e" then
     character1.Reanimate.Part.Position = mouse.Hit.p
