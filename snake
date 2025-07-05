@@ -882,9 +882,9 @@ end
 function CharacterFade(COLOR,TIMER)
 end
 
-Character["PogoStick"].Handle.att2_Handle.Parent = RightArm
-RightArm.att2_Handle.Rotation = Vector3.new(45, 90, 0)
-RightArm.att2_Handle.Position = Vector3.new(0, -2.4, -1.1)  
+--Character["PogoStick"].Handle.att2_Handle.Parent = RightArm
+--RightArm.att2_Handle.Rotation = Vector3.new(45, 90, 0)
+--RightArm.att2_Handle.Position = Vector3.new(0, -2.4, -1.1)  
 
 print'<===================================================>'
 warn'|| Original Script made by MLG Super Killer'
@@ -2417,7 +2417,7 @@ function katana()
 		LeftShoulder.C0 = Clerp(LeftShoulder.C0, CF(-1.4,0.5,0.1) * ANGLES(RAD(-35),RAD(10),RAD(-50)),.8)
 	end
 	MODE = "Katana"
-	Character["Back_AccAccessory"].Handle.att3_Handle.Parent = RightArm
+--	Character["Back_AccAccessory"].Handle.att3_Handle.Parent = RightArm
     RightArm.att3_Handle.Rotation = Vector3.new(-125, -85, 180)
     RightArm.att3_Handle.Position = Vector3.new(-0.1, -0.7, -1.8)
 	Sound.SoundId = syn and getsynasset('Heavensent.mp3') or getcustomasset('Heavensent.mp3')
@@ -3862,21 +3862,21 @@ coroutine.resume(coroutine.create(function()
         end
         if MODE ~= "Katana" and AlignedKatana == true then
             AlignedKatana = false
-            RightArm.att3_Handle.Parent = Character["Back_AccAccessory"].Handle
-            Character["Back_AccAccessory"].Handle.att3_Handle.Rotation = Vector3.new(0, 0, 0)
-            Character["Back_AccAccessory"].Handle.att3_Handle.Position = Vector3.new(0, 0, 0)
+--            RightArm.att3_Handle.Parent = Character["Back_AccAccessory"].Handle
+--            Character["Back_AccAccessory"].Handle.att3_Handle.Rotation = Vector3.new(0, 0, 0)
+ --           Character["Back_AccAccessory"].Handle.att3_Handle.Position = Vector3.new(0, 0, 0)
         end
         if MODE ~= "Katana" and AlignedGun == true then
             AlignedGun = false
-            Character["PogoStick"].Handle.att2_Handle.Parent = RightArm
-            RightArm.att2_Handle.Rotation = Vector3.new(45, 90, 0)
-            RightArm.att2_Handle.Position = Vector3.new(0, -2.4, -1.1)  
+ --           Character["PogoStick"].Handle.att2_Handle.Parent = RightArm
+ --         RightArm.att2_Handle.Rotation = Vector3.new(45, 90, 0)
+  --          RightArm.att2_Handle.Position = Vector3.new(0, -2.4, -1.1)  
         end
         if MODE == "Katana" and AlignedGun == false then
             AlignedGun = true
-            RightArm.att2_Handle.Parent = Character["PogoStick"].Handle
-            Character["PogoStick"].Handle.att2_Handle.Rotation = Vector3.new(0, 0, 0)
-            Character["PogoStick"].Handle.att2_Handle.Position = Vector3.new(0, 0, 0)
+ --           RightArm.att2_Handle.Parent = Character["PogoStick"].Handle
+  --          Character["PogoStick"].Handle.att2_Handle.Rotation = Vector3.new(0, 0, 0)
+ --           Character["PogoStick"].Handle.att2_Handle.Position = Vector3.new(0, 0, 0)
         end
     end
 end))
