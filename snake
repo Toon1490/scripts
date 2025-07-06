@@ -91,8 +91,7 @@ game:GetService("Players").LocalPlayer.Character.Head.Anchored = false
    end)
   end
 end]]--
-
-game.TestService.IsSleepAllowed = false
+--[[game.TestService.IsSleepAllowed = false
 for i,v in next, game:GetService("Players").LocalPlayer.Character:GetDescendants() do
 	if v:IsA("BasePart") then 
 		game:GetService("RunService").Heartbeat:connect(function()
@@ -105,7 +104,8 @@ for i,v in next, game:GetService("Players").LocalPlayer.Character:GetDescendants
 			end)
 		end)
 	end
-end
+end]]--
+
 local OxideApi = loadstring(game:HttpGet("https://raw.githubusercontent.com/Nitro-GT/Utils/refs/heads/main/OxideApi"))()
 
 --[[game:GetService("Players").LocalPlayer.Character.Head.Anchored = false
