@@ -11,8 +11,8 @@ local hatcollide = true --makes hats cancollide (only method 0)
 local humState16 = true --enables collisions for limbs before the humanoid dies (using hum:ChangeState)
 local addtools = false --puts all tools from backpack to character and lets you hold them after reanimation
 local hedafterneck = false --disable aligns for head and enable after neck is removed
-local loadtime = game:GetService("Players").RespawnTime + 0.5 --anti respawn delay
-local method = 0 --reanimation method
+--local loadtime = game:GetService("Players").RespawnTime + 0.5 --anti respawn delay
+local method = 1 --reanimation method
 --methods:
 --0 - breakJoints (takes [loadtime] seconds to laod)
 --1 - limbs
@@ -26,7 +26,7 @@ local alignmode = 3 --AlignPosition mode
 --2 - 2 AlignPositions rigidity enabled both true and false
 --3 - AlignPosition rigidity enabled false
 
-healthHide = healthHide and ((method == 0) or (method == 2) or (method == 000)) and gp(c, "Head", "BasePart")
+--healthHide = healthHide and ((method == 0) or (method == 2) or (method == 000)) and gp(c, "Head", "BasePart")
 
 local lp = game:GetService("Players").LocalPlayer
 local rs = game:GetService("RunService")
