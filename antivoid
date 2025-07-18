@@ -2,7 +2,7 @@ local Players = game:GetService("Players")
 local LocalPlayer = Players.LocalPlayer
 local character = LocalPlayer.Character or LocalPlayer.CharacterAdded:Wait()
 local hrp = character:WaitForChild("HumanoidRootPart")
-local safeY = 50  -- Y position to teleport player to
+local safeY = 300  -- Y position to teleport player to
 local safePosition = Vector3.new(0, safeY, 0)  -- Center above baseplate
 
 	game:GetService("StarterGui"):SetCore("SendNotification", { 
@@ -13,7 +13,7 @@ local safePosition = Vector3.new(0, safeY, 0)  -- Center above baseplate
 
 while true do
     task.wait(0.2)
-    if hrp.Position.Y < -50 then
+    if hrp.Position.Y < -100 then
         hrp.CFrame = CFrame.new(safePosition)
     end
 end
