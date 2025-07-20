@@ -8392,7 +8392,7 @@ FLOOR = math.floor
 -----------------------------------
 --||///////============\\\\\\\\||--
 --><Values	
-local sick = IT("Sound",Character)
+local sick = sound69
 Animation_Speed = 1.75
 Animation_Speed2 = 5
 Frame_Speed = 1 / 60 -- (1 / 30) OR (1 / 60)
@@ -11891,32 +11891,7 @@ while true do
 			c.Color = C3(0,0,0)
 		end
 	end
-	if sick then
-		sick.Name = "epic music aint it"
-		sick.SoundId = "rbxassetid://919231299"
-		sick.MaxDistance = "inf"
-		if sick.TimePosition <55 then
-			sick.TimePosition = 55
-		elseif sick.TimePosition >=82.5 then
-			sick.TimePosition = 55
-		end
-		sick.Volume = 10
-		sick.Looped = true
-		sick.Playing = true
-	else
-		local sick = Instance.new("Sound",Character)
-		sick.Name = "epic music aint it"
-		sick.SoundId = "rbxassetid://919231299"
-		sick.MaxDistance = "inf"
-		if sick.TimePosition <56 then
-			sick.TimePosition = 56
-		elseif sick.TimePosition >=80 then
-			sick.TimePosition = 56
-		end
-		sick.Volume = 10
-		sick.Looped = true
-		sick.Playing = true
-	end
+	local sick = sound69
 	if ATTACK == false then
 		for _, c in pairs(Character:GetChildren()) do
 			if c:IsA("Part") or c:IsA("MeshPart") then
