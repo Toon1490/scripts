@@ -31,7 +31,7 @@ local customasset = function(id)
         return s.SoundId
     end
 
-sound69.SoundId = customasset("song/lostsoul.mp3")
+sound69.SoundId = customasset("song/lostsoulfix.mp3")
 
 function rbxgui()
 	local t = {}
