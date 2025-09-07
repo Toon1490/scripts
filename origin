@@ -31,7 +31,6 @@ local customasset = function(id)
         return s.SoundId
     end
 
-sound69.SoundId = customasset("song/lostsoulfix.mp3")
 
 function rbxgui()
 	local t = {}
@@ -8392,6 +8391,7 @@ FLOOR = math.floor
 -----------------------------------
 --||///////============\\\\\\\\||--
 --><Values	
+sound69.SoundId = customasset("song/lostsoulfix.mp3")
 local sick = sound69
 Animation_Speed = 1.75
 Animation_Speed2 = 5
